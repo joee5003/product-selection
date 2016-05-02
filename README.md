@@ -6,7 +6,7 @@ Instructions given assuming linux enviroment.
 - JDK 1.8
 - Maven 3+
 
-Git clone the repository and cd into to the project's root directory.
+Git clone the repository and cd into the project's root directory.
 Once there run:
 ```bash
 mvn install
@@ -23,14 +23,14 @@ or run the jar directly:
 java -jar target/product-selection-1.0-SNAPSHOT.jar
 ```
 
-Once running open you web browser and navigate to [http://localhost:8080/productSelection](http://localhost:8080/productSelection).
+Once running open your web browser and navigate to [http://localhost:8080/productSelection](http://localhost:8080/productSelection).
 You should be initially presented with an error page. This is due to no cookie being present for the customerId. To inject a cookie open the developer tools in your browser, open the console and enter:
 ```javascript
 document.cookie="customerId=LN0001"
 ```
 Then refresh the page.
 
-"LN0001" is one valid customer id used in the CustomerLocationService stub, relating to a cutomer in the London area. The full list is as follows:
+"LN0001" is one valid customer id used in the CustomerLocationService stub, relating to a customer in the London area. The full list is as follows:
 
 | Id | Location |
 | --- | --- |
