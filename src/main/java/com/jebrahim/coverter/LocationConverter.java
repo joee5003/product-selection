@@ -13,6 +13,13 @@ public class LocationConverter implements AttributeConverter<Location, String >
 
     @Override
     public Location convertToEntityAttribute(String dbData) {
-        return Location.valueOf(dbData);
+        try
+        {
+            return Location.valueOf(dbData);
+        }
+        catch( IllegalArgumentException iae )
+        {
+            return Location.OTHER;
+        }
     }
 }
