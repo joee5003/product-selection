@@ -11,7 +11,6 @@ import java.util.Map;
  * Stub implementation of the {@link com.jebrahim.service.CustomerLocationService CustomerLocationService}.
  * Uses hash map to emulate getting data from a database.
  */
-@Service
 public class CustomerLocationServiceStubImpl implements CustomerLocationService
 {
     private static Map<String, Location> USERS = new HashMap<>();
